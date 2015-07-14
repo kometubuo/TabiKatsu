@@ -16,7 +16,7 @@ public class ReserveRoomController {
 
 	private static final String Root = "reserve/";
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String reserve(Locale locale, Model model) {
 		
 		

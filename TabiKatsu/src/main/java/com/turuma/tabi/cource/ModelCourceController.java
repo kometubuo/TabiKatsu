@@ -16,7 +16,7 @@ public class ModelCourceController {
 
 	private static final String Root = "cource/";
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String show(Locale locale, Model model) {
 		
 		

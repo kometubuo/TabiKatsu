@@ -11,14 +11,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the tourist authentication page.
  */
 @Controller
+@RequestMapping("/auth")
 public class TouristAuthenticateController {
+	
+	private static final String Root = "auth/";
 
-	@RequestMapping(value = "/auth/tourist", method = RequestMethod.GET)
+	@RequestMapping(value = "/tourist", method = RequestMethod.GET)
 	public String auth(Locale locale, Model model) {
 		
 		
 		
-		return "tourist_auth";
+		return Root + "tourist_auth";
 	}
 
 }

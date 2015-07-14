@@ -16,7 +16,7 @@ public class HotelIntroduceController {
 
 	private static final String Root = "introduce/";
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String show(Locale locale, Model model) {
 		
 		
